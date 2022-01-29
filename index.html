@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FCC Forum Homepage</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.png" type='image/png'>
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+  <header>
+    <a href="https://forum.freecodecamp.org/" target="_blank" id='fcc-logo'>
+      <img src="fCC logo.svg" alt="free Code Camp logo">
+    </a>
+    <a href="https://www.freecodecamp.org/learn/" id='curriculum' target="_blank">Visit the Curriculum</a>
+  </header>
+  <main>
+    <div id='active-users'>
+      <div id='users-count'>Active users(<span id='count'></span>): </div>
+      <!--list of active users icons rendered with jQuery-->
+    </div>
+    <section id='forum-container'>
+      <header>
+        <ul id='labels'>
+          <li>#</li>
+          <li>Recently Active Topics</li>
+          <li>Participants</li>
+          <li>Replies</li>
+          <li>Views</li>
+          <li>Activity</li>
+        </ul>
+      </header>
+      <div id='topics-container'>
+        <!--list of 30 most recent topics rendered with jQuery-->
+      </div>
+  </section>
+
+  </main>
+</body>
+</html>

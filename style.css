@@ -1,0 +1,186 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #313146;
+  color: #767684;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+body > header {
+  background-color: #0a0a23;
+  text-align: center;
+  padding: .4em 1em .3em 1em;
+}
+
+main {
+  max-width: 1110px;
+  margin: auto;
+  padding: 1em;
+}
+
+#curriculum {
+  display: inline-block;
+  position: absolute;
+  font-size: 1.2em;
+  color: #dddee0;
+  left: 2em;
+  padding: .4em;
+}
+
+#curriculum:hover {
+  background-color: #dddee0;
+  color: #0a0a23;
+}
+
+#fcc-logo {
+  display: inline-block;
+  border-radius: .4em;
+  padding: .4em .6em .2em .6em;
+}
+
+#fcc-logo:hover {
+  background-color: rgba(118, 118, 132, 0.4);
+}
+
+#active-users {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1em;
+  padding: 0 2em;
+}
+
+#active-users > .user-icon {
+  -webkit-transition: margin .6s;
+  transition: margin .6s;
+}
+
+#active-users > .user-icon:not(:nth-child(2)) {
+  margin-left: -.8em;
+}
+
+#active-users:hover {
+  color: #a9aab2;
+}
+
+#active-users:hover > .user-icon {
+  margin-left: 0;
+}
+
+#users-count {
+  font-size: 1.2em;
+  margin-left: 1em;
+  margin-right: .4em;
+}
+
+#forum-container {
+  font-size: 1.2em;
+}
+
+.topic, #labels {
+  padding: .6em;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 3em 1fr 8em 3em 3em 3em;
+      grid-template-columns: 3em 1fr 8em 3em 3em 3em;
+  gap: 1em;
+}
+
+.topic > *, #labels > * {
+  text-align: center;
+}
+
+.topic > *:nth-child(2), .topic .participants, #labels > *:nth-child(2), #labels .participants {
+  text-align: left;
+}
+
+#labels {
+  border-bottom: 0.2em solid #424255;
+  padding-bottom: .2em;
+}
+
+.topic {
+  border-bottom: 0.1em solid #424255;
+}
+
+.topic > a {
+  color: #dddee0;
+}
+
+.topic > a:hover {
+  color: #08c;
+}
+
+.topic:hover {
+  background-color: rgba(118, 118, 132, 0.2);
+}
+
+@media (max-width: 1000px) {
+  .topic, #labels {
+    -ms-grid-columns: 1em 1fr 6em 3em 3em 3em;
+        grid-template-columns: 1em 1fr 6em 3em 3em 3em;
+  }
+}
+
+@media (max-width: 900px) {
+  #forum-container {
+    font-size: 1rem;
+    min-width: 600px;
+  }
+}
+
+@media (max-width: 700px) {
+  #active-users {
+    font-size: .9rem;
+  }
+  #curriculum {
+    position: static;
+    font-size: 1em;
+  }
+  #fcc-logo > img {
+    width: 170px;
+  }
+  body > header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topic, #labels {
+    gap: .6em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
